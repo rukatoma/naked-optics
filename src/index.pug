@@ -1,0 +1,226 @@
+doctype html
+html(lang="en")
+    head
+        include pug/head
+    body
+        include pug/header
+        .assortment 
+            .swiper.swiper-first
+                .swiper-wrapper
+                    .swiper-slide
+                        .assortment__item
+                            img(src="@img/assortment/1.png", alt="").assortment__img
+                            a(href="").assortment__name Sun glasses
+                    .swiper-slide
+                        .assortment__item
+                            img(src="@img/assortment/2.png", alt="").assortment__img
+                            a(href="").assortment__name Sport glasses
+                    .swiper-slide
+                        .assortment__item
+                            img(src="@img/assortment/3.png", alt="").assortment__img
+                            a(href="").assortment__name Bycicle glasses
+                    .swiper-slide
+                        .assortment__item
+                            img(src="@img/assortment/4.png", alt="").assortment__img
+                            a(href="").assortment__name Ski goggles
+                    .swiper-slide
+                        .assortment__item
+                            img(src="@img/assortment/5.png", alt="").assortment__img
+                            a(href="").assortment__name Bike Goggles
+                    .swiper-slide
+                        .assortment__item
+                            img(src="@img/assortment/6.png", alt="").assortment__img
+                            a(href="").assortment__name Lenses
+                    .swiper-slide
+                        .assortment__item
+                            img(src="@img/assortment/7.png", alt="").assortment__img
+                            a(href="").assortment__name Accesories
+        main.hero
+            .swiper.swiper-second
+                .swiper-wrapper 
+                    .swiper-slide 
+                        .hero__item
+                            img(src="@img/main-bg.jpg", alt="").hero__img
+                            .hero__content 
+                                span.hero__new-prod The new
+                                h1.title.title--main Force evo
+                                p.title-desc.title-desc--hero.hero__title-desc For the toughtest situation
+                                span.cost.cost--white.hero__cost 79,99
+                                a(href="#").btn.btn-reset.hero__btn Buy now
+                    .swiper-slide 
+                        .hero__item 
+                            img(src="@img/main-bg.jpg", alt="").hero__img
+                            .hero__content 
+                                span.hero__new-prod The new
+                                h1.title.title--main Troop evo
+                                p.title-desc.title-desc--hero.hero__title-desc For the toughtest situation
+                                span.cost.cost--white.hero__cost 79,99
+                                a(href="#").btn.btn-reset.hero__btn Buy now
+                    .swiper-slide 
+                        .hero__item 
+                            img(src="@img/main-bg.jpg", alt="").hero__img
+                            .hero__content 
+                                span.hero__new-prod The new
+                                h1.title.title--main Storm evo
+                                p.title-desc.title-desc--hero.hero__title-desc For the toughtest situation
+                                span.cost.cost--white.hero__cost 89,99
+                                a(href="#").btn.btn-reset.hero__btn Buy now
+                .swiper-pagination
+        section.celebrity-choice
+            .wrapper 
+                .swiper.swiper-thrid
+                    .swiper-wrapper
+                        .swiper-slide
+                            .celebrity-choice__item    
+                                img(src="@img/celebrity-choice/1.jpg", alt="").celebrity-choice__img
+                                span.celebrity-choice__name Stefan Muller
+                                img(src="@img/celebrity-choice/glasses-1.png", alt="").celebrity-choice__glasses-img
+                                .celebrity-choice__content
+                                    span.celebrity-choice__type Bike glasses
+                                    h1.title.title--item.celebrity-choice__title The Falcon
+                                    p.title-desc.celebrity-choice__desc Resistant and flexible TR-90 Frame, adjustable sylicon nose pads, interchangeble lenses 5+different lenses 
+                                    span.cost.cost--black.cost--right 74,99
+                        .swiper-slide
+                            .celebrity-choice__item    
+                                img(src="@img/celebrity-choice/2.jpg", alt="").celebrity-choice__img
+                                span.celebrity-choice__name.celebrity-choice__name--black Chloe Kellerman
+                                img(src="@img/celebrity-choice/glasses-2.png", alt="").celebrity-choice__glasses-img
+                                .celebrity-choice__content
+                                    span.celebrity-choice__type Bike glasses
+                                    h1.title.title--item.celebrity-choice__title Force evo
+                                    p.title-desc.celebrity-choice__desc Resistant and flexible TR-90 Frame, adjustable sylicon nose pads, interchangeble lenses 5+different lenses 
+                                    span.cost.cost--black.cost--right 74,99
+                        .swiper-slide
+                            .celebrity-choice__item    
+                                img(src="@img/celebrity-choice/3.jpg", alt="").celebrity-choice__img
+                                span.celebrity-choice__name Adrien Brodley
+                                img(src="@img/celebrity-choice/glasses-3.png", alt="").celebrity-choice__glasses-img
+                                .celebrity-choice__content
+                                    span.celebrity-choice__type Bike glasses
+                                    h1.title.title--item.celebrity-choice__title The line
+                                    p.title-desc.celebrity-choice__desc Resistant and flexible TR-90 Frame, adjustable sylicon nose pads, interchangeble lenses 5+different lenses 
+                                    span.cost.cost--black.cost--right 74,99
+        section
+            .wrapper.wrapper-pad 
+                .double-prod 
+                    .double-prod__content
+                        span.double-prod__type Falcon & Hawk 
+                        h1.title.title--main-min.double-prod__title The size matters
+                        p.title-desc.double-prod__desc We developed the falcon for big faces and the hawk for smaller ones so it can fit your needs for the best performance without compromise
+                        .double-prod__products 
+                            .double-prod__item
+                                span.double-prod__type Size L 
+                                a(href="#").btn.btn-reset.double-prod__btn Shop falcon
+                            .double-prod__item
+                                span.double-prod__type Size S 
+                                a(href="#").btn.btn-reset.double-prod__btn Shop hawk
+                    img(src="@img/double-product/size-L.png", alt="Size L").double-prod__img-1
+                    img(src="@img/double-product/size-S.png", alt="Size S").double-prod__img-2
+        section.hero-stories
+            .wrapper.wrapper-pad
+                .title-between.hero-stories__title
+                    h1.title.title--main-min Stories
+                    a(href="#").link Discover more 
+            .hero-stories__first
+                .wrapper
+                    .swiper.swiper-thrid 
+                        .swiper-wrapper 
+                            .swiper-slide
+                                a(href="#").hero-stories__first-item
+                                    img(src="@img/hero-stories/stories-1.jpg", alt="").hero-stories__img
+                                    .hero-stories__shadow
+                                    p.hero-stories__name The perfect running training: Some advice for beginners
+                            .swiper-slide
+                                a(href="#").hero-stories__first-item
+                                    img(src="@img/hero-stories/stories-2.jpg", alt="").hero-stories__img
+                                    .hero-stories__shadow
+                                    p.hero-stories__name The perfect running training: Some advice for beginners
+                            .swiper-slide
+                                a(href="#").hero-stories__first-item
+                                    img(src="@img/hero-stories/stories-3.jpg", alt="").hero-stories__img
+                                    .hero-stories__shadow
+                                    p.hero-stories__name The perfect running training: Some advice for beginners
+                            .swiper-slide
+                                a(href="#").hero-stories__first-item
+                                    img(src="@img/hero-stories/stories-4.jpg", alt="").hero-stories__img
+                                    .hero-stories__shadow
+                                    p.hero-stories__name The perfect running training: Some advice for beginners
+                            .swiper-slide
+                                a(href="#").hero-stories__first-item
+                                    img(src="@img/hero-stories/stories-1.jpg", alt="").hero-stories__img
+                                    .hero-stories__shadow
+                                    p.hero-stories__name The perfect running training: Some advice for beginners
+                            .swiper-slide
+                                a(href="#").hero-stories__first-item
+                                    img(src="@img/hero-stories/stories-2.jpg", alt="").hero-stories__img
+                                    .hero-stories__shadow
+                                    p.hero-stories__name The perfect running training: Some advice for beginners
+                            .swiper-slide
+                                a(href="#").hero-stories__first-item
+                                    img(src="@img/hero-stories/stories-3.jpg", alt="").hero-stories__img
+                                    .hero-stories__shadow
+                                    p.hero-stories__name The perfect running training: Some advice for beginners
+                            .swiper-slide
+                                a(href="#").hero-stories__first-item
+                                    img(src="@img/hero-stories/stories-4.jpg", alt="").hero-stories__img
+                                    .hero-stories__shadow
+                                    p.hero-stories__name The perfect running training: Some advice for beginners
+            .hero-stories__middle 
+                .hero-stories__shadow-black
+                .wrapper
+                    h2.title.hero-stories__middle-title A solution for everyone
+            .hero-stories__second
+                .wrapper
+                    .swiper.swiper-thrid 
+                        .swiper-wrapper 
+                            .swiper-slide
+                                a(href="#").hero-stories__second-item
+                                    img(src="@img/hero-stories/type-1.jpg", alt="").hero-stories__img
+                                    .hero-stories__shadow
+                                    p.hero-stories__name The perfect running training: Some advice for beginners
+                            .swiper-slide
+                                a(href="#").hero-stories__second-item
+                                    img(src="@img/hero-stories/type-2.jpg", alt="").hero-stories__img
+                                    .hero-stories__shadow
+                                    p.hero-stories__name The perfect running training: Some advice for beginners
+                            .swiper-slide
+                                a(href="#").hero-stories__second-item
+                                    img(src="@img/hero-stories/type-3.jpg", alt="").hero-stories__img
+                                    .hero-stories__shadow
+                                    p.hero-stories__name The perfect running training: Some advice for beginners
+                            .swiper-slide
+                                a(href="#").hero-stories__second-item
+                                    img(src="@img/hero-stories/type-4.jpg", alt="").hero-stories__img
+                                    .hero-stories__shadow
+                                    p.hero-stories__name The perfect running training: Some advice for beginners
+        .featured-on
+            .wrapper.wrapper-pad 
+                .featured-on__inner
+                    h2.title.featured-on__title Featured on
+                    .featured-on__logos
+                        img(src="@img/featured-on/1.png", alt="").featured-on__img
+                        img(src="@img/featured-on/2.png", alt="").featured-on__img
+                        img(src="@img/featured-on/3.png", alt="").featured-on__img
+                        img(src="@img/featured-on/4.png", alt="").featured-on__img
+                        img(src="@img/featured-on/5.png", alt="").featured-on__img
+                        img(src="@img/featured-on/6.png", alt="").featured-on__img
+        .news-letter 
+            .news-letter__shadow
+            .wrapper.wrapper-pad
+                .news-letter__inner
+                    .news-letter__text
+                        span.news-letter__desc Join our newsletter
+                        h2.news-letter__title Enter your e-mail and don’t miss any news or promotion from NAKED Optics
+                    .news-letter__form
+                        form(action="" method="post")
+                            .news-letter__form-body
+                                input(type="email" placeholder="Add your email").news-letter__input
+                                button(type="submit").btn.btn-reset.news-letter__submit Send
+                            .news-letter__checkbox-body
+                                input(type="checkbox").news-letter__checkbox
+                                span.news-letter__checkbox-name I accept the privacy policy
+        include pug/footer
+        script(src="js/vendor/jquery-1.11.3.min.js")
+        script(src="js/vendor/fm.revealator.jquery.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
+        script(src="js/script.js")

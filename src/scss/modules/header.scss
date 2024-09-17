@@ -1,0 +1,152 @@
+.header {
+
+    &__alert {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 32px;
+        text-transform: uppercase;
+
+        background-color: $black;
+
+        &::after {
+            content: ">";
+
+            margin-left: 16px;
+
+            color: $white;
+        }
+
+        &::before {
+            content: "<";
+
+            margin-right: 16px;
+
+            color: $white;
+        }
+
+        &-text {
+            color: $white;
+        }
+    }
+
+    &__menu {
+        background-color: $white;
+        padding: 0 18px;
+
+        &-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 100%;
+            height: 90px;
+        }
+    }
+
+    &__nav {
+        @include for-desktop {
+            display: flex;
+            flex-direction: column;
+
+            position: absolute;
+            top: 102px;
+            left: 0;
+            z-index: 10;
+
+            padding: 30px 18px;
+            margin-left: -220px;
+
+            background-color: $white;
+
+            border-radius: 0 6px 6px 0;
+            box-shadow: 0 0 10px rgba($black, .15);
+
+            transition: .2s;
+
+            &--active {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__tab {
+        margin-right: 28px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include for-desktop {
+            margin-right: 22px;
+        }
+
+        &s {
+            display: flex;
+        }
+    }
+
+    &__link {
+        margin-right: 60px;
+        letter-spacing: 3.2px;
+        font-size: 16px;
+        color: $black;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &-gradient {
+            background: $gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #ff7324;
+        }
+
+        @include for-desktop {
+            margin-right: 0;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__account {
+        // @include for-mobile {
+        //     display: none;
+        // }
+    }
+
+    &__cart {
+        position: relative;
+
+        padding-right: 12px;
+
+        &-count {
+            position: absolute;
+            top: -10px;
+            right: 1px;
+
+            width: 20px;
+            height: 20px;
+
+            border-radius: 50%;
+
+            background-color: $red;
+
+            p {
+                position: relative;
+                top: 1px;
+                left: 5px;
+
+                font-size: 14px;
+
+                color: $white;
+            }
+        }
+    }
+}

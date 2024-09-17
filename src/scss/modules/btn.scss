@@ -1,0 +1,19 @@
+.btn {
+    padding: 17.5px 20px 19.5px 16px;
+    background-color: $white;
+    border-radius: 4px;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $black;
+
+    &::after {
+        content: url('../img/btn-arrow.png');
+    }
+
+    &-reset {
+        text-decoration: none;
+        border: none;
+    }
+}

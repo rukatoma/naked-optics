@@ -1,0 +1,46 @@
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 20px;
+    height: 12px;
+
+    &__line {
+        width: 20px;
+        height: 2px;
+
+        border-radius: 1px;
+
+        background-color: $black;
+
+        transition: .15s;
+    }
+
+    @include for-desktop {
+        position: relative;
+
+        display: flex;
+
+        &--active {
+            .burger__line {
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%);
+            }
+
+            .burger__line:nth-child(2) {
+                opacity: 0;
+                margin-left: -20px;
+            }
+
+            .burger__line:nth-child(1) {
+                transform: rotate(45deg);
+            }
+
+            .burger__line:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.double-prod {
+    position: relative;
+    padding: 119px;
+    padding-left: 116px;
+    background-image: url('../img/double-product/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    @include for-desktop-big {
+        padding: 80px;
+    }
+
+    @include for-desktop {
+        display: flex;
+        justify-content: center;
+        padding: 56px 16px;
+        padding-bottom: 360px;
+    }
+
+    @include for-tablet {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-bottom: 300px;
+    }
+
+    &__content {
+        max-width: 550px;
+
+        @include for-desktop-big {
+            max-width: 450px;
+        }
+    }
+
+    &__type {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+    }
+
+    &__desc {
+        margin-bottom: 43px;
+    }
+
+    &__products {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        &:first-child {
+            margin-right: 60px;
+
+            @include for-tablet {
+                margin-right: 16px;
+            }
+        }
+    }
+
+    &__btn {
+        &::after {
+            margin-left: 80px;
+
+            @include for-desktop-big {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__img {
+        &-1 {
+            position: absolute;
+            top: -72px;
+            right: 140px;
+            z-index: 1;
+            max-width: 500px;
+            object-fit: fill;
+
+            @include for-desktop-big {
+                top: 0px;
+                max-width: 350px;
+            }
+
+            @include for-desktop {
+                top: 45%;
+                left: 50%;
+                transform: translate(-60%);
+            }
+
+            @include for-tablet {
+                top: 62%;
+                max-width: 230px;
+            }
+        }
+
+        &-2 {
+            position: absolute;
+            top: 50px;
+            right: 30px;
+            z-index: 2;
+            max-width: 500px;
+            object-fit: fill;
+
+            @include for-desktop-big {
+                top: 100px;
+                max-width: 350px;
+            }
+
+            @include for-desktop {
+                top: 55%;
+                left: 50%;
+                transform: translate(-40%);
+            }
+
+            @include for-tablet {
+                top: 70%;
+                max-width: 230px;
+            }
+        }
+    }
+}
